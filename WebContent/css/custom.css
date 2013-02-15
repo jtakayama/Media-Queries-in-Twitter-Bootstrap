@@ -14,10 +14,63 @@
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);	
 }
 
-.sidebar-custom {
-	float: right;
-	margin: 30px 0 30px;
+.navbar-custom > ul > li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
 }
+.navbar-custom > ul > li:first-child {
+	margin-left: 10px;
+}
+.navbar-custom > ul > li > a {
+	line-height: 100%;
+	font-weight: bold;
+	color: #ffffff;
+	display: block;
+	padding: 14px 15px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+.navbar-custom a:hover {
+	color: #ffffff;
+	background: #474747;
+	/* gradient */
+	background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+	background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+	background: linear-gradient(-90deg, #282828, #4f4f4f);
+}
+
+/* Searchbar css*/
+.custom-searchform {
+	position: relative;
+	z-index: 100;
+	width: 160px;
+	border: none;
+	display: block;
+}
+.custom-searchfield {	
+	width: 140px;
+	/* float: right; */
+	background-color: #ffffff;
+	border: none;
+	padding: 6px 10px;
+	/* border radius */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* box shadow */
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	/* transition */
+	-webkit-transition: width .7s;
+	-moz-transition: width .7s;
+	transition: width .7s;
+}
+/* End searchbar css */
 
 /* The content css, with some margin and size information removed so as not to override Twitter Bootstrap */
 .content-custom {
@@ -35,11 +88,18 @@
 }
 /* End content code */
 
+/* Sidebar code */
+.sidebar-custom {
+	float: right;
+	margin: 0 0 30px;
+}
+/* End sidebar code */
+
 /* Widget code, modified to remove sizes */
 
 .widget-custom {
 	background: #fff;
-	/*margin: 0 0 30px;*/
+	margin: 0 0 30px;
 	padding: 10px 20px;
 	/* rounded corner */
 	-webkit-border-radius: 8px;
